@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>danazaitsevaa — графический дизайнер</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER — общая fixed-навигация сайта ================= -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="#top" class="header-logo">danazaitsevaa</a>
+      <nav class="header-nav">
+        <a href="#top" class="nav-link active">главная</a>
+        <a href="#about" class="nav-link">обо мне</a>
+        <a href="#cases" class="nav-link">кейсы</a>
+        <a href="#contacts" class="nav-link">контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="top" class="hero">
+    <div class="hero-inner">
+      <div class="hero-stage">
+        <h1 class="hero-word">дизайн</h1>
+
+        <div class="note-wrap">
+          <div class="note-tilt" id="noteTilt" data-cursor="decor">
+            <img src="./assets/Group_2087334016.png" alt="Portfolio note" class="note-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="about">
+
+    <!--
+      Штрихкод — теперь первый элемент ВНУТРИ About (не внутри Hero,
+      у которого overflow:hidden), сдвинут вверх на половину своей
+      высоты. Визуально это та же самая точка (граница Hero/About),
+      но теперь он ничем не обрезается и лежит поверх фона About
+      (z-index:5), а не под ним. Подробное объяснение — в style.css.
+    -->
+    <div class="barcode-wrap">
+      <div class="barcode-inner">
+        <div class="barcode-shift">
+          <div class="barcode-tilt" id="barcodeTilt" data-cursor="decor">
+            <img src="./assets/_0064_Barcode_Red_1.png" alt="Barcode" class="barcode-img">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-inner">
+      <div class="about-top">
+        <div class="about-copy">
+          <h2 class="section-title">обо мне</h2>
+          <p class="about-p about-p-1">я — графический дизайнер. меня зовут дана :)</p>
+          <p class="about-p about-p-2">мне важно, чтобы в каждой работе чувствовалась индивидуальность — пользователи должны влюбляться в созданный мною визуал</p>
+        </div>
+
+        <div class="about-photo-wrap">
+          <img
+            src="https://images.pexels.com/photos/7180783/pexels-photo-7180783.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            alt="Дана в детстве"
+            class="about-photo">
+        </div>
+      </div>
+
+      <div class="about-divider"></div>
+
+      <dl class="about-rows">
+        <div class="about-row">
+          <dt class="about-label">образование</dt>
+          <dd class="about-blocks">
+            <div>
+              <p class="about-block-title">факультет дизайна в singularity by skyeng</p>
+            </div>
+          </dd>
+        </div>
+
+        <div class="about-row">
+          <dt class="about-label">опыт</dt>
+          <dd class="about-blocks">
+            <div>
+              <p class="about-block-title">образовательный центр skypro и singularity</p>
+              <p class="about-block-detail">создание смм-креативов и единого визуала, подготовка наружной рекламы</p>
+            </div>
+            <div>
+              <p class="about-block-title">фриланс</p>
+              <p class="about-block-detail">разработка логотипов и фирменного стиля, создание рекламных материалов, дизайн сайтов и приложений, подготовка макетов к печати, работа с типографикой</p>
+            </div>
+          </dd>
+        </div>
+
+        <div class="about-row">
+          <dt class="about-label">навыки</dt>
+          <dd class="about-blocks">
+            <div>
+              <p class="about-block-title">hard skills</p>
+              <p class="about-block-detail">владение графическими редакторами(figma, canva, affinity, сервисы adobe), работа с нейросетями(midjourney, stable diffusion, dall-e и др), типографика, верстка, проектирование интерфейсов</p>
+            </div>
+            <div>
+              <p class="about-block-title">soft skills</p>
+              <p class="about-block-detail">тайм-менеджмент, коммуникабельность, креативное мышление, гибкость</p>
+            </div>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ================= CASES / PROJECTS ================= -->
+  <!--
+    ПЛЕЙСХОЛДЕР-ДАННЫЕ ПРОЕКТОВ
+    Реальных изображений/материалов кейсов в проекте не было.
+    Каждая карточка ведёт на свою страницу в /projects/ — структура
+    и переходы полностью рабочие, содержимое — честные плейсхолдеры,
+    готовые к замене на реальные материалы.
+  -->
+  <section id="cases" class="cases">
+    <div class="cases-inner">
+      <div class="reveal" data-reveal>
+        <h2 class="section-title">кейсы</h2>
+      </div>
+
+      <div class="cases-grid">
+
+        <div class="cases-row cases-row--1">
+
+        <div class="reveal case case-1" data-reveal data-delay="0">
+          <a class="project-card" href="./projects/project-1.html" data-cursor="view">
+            <div class="project-media">
+              <div class="project-state default"><img src="./assets/projects/01-cover.jpg" alt="проект 01"></div>
+              <div class="project-state hover"><img src="./assets/projects/01-cover-hover.jpg" alt="проект 01"></div>
+            </div>
+            <div class="project-meta-row">
+              <p class="project-title">lean_tattoo</p>
+              <span class="project-arrow" aria-hidden="true">→</span>
+            </div>
+            <p class="project-sub">айдентика · 2025</p>
+          </a>
+        </div>
+
+        <div class="reveal case case-2" data-reveal data-delay="70">
+          <a class="project-card" href="./projects/project-2.html" data-cursor="view">
+            <div class="project-media">
+              <div class="project-state default"><img src="./assets/projects/02-cover.jpg" alt="проект 02"></div>
+              <div class="project-state hover"><img src="./assets/projects/02-cover-hover.jpg" alt="проект 02"></div>
+            </div>
+            <div class="project-meta-row">
+              <p class="project-title">blob</p>
+              <span class="project-arrow" aria-hidden="true">→</span>
+            </div>
+            <p class="project-sub">презентация · 2026</p>
+          </a>
+        </div>
+
+      </div><!-- /cases-row -->
+
+        <div class="cases-row cases-row--2">
+
+        <div class="reveal case case-3" data-reveal data-delay="140">
+          <a class="project-card" href="./projects/project-3.html" data-cursor="view">
+            <div class="project-media">
+              <div class="project-state default"><img src="./assets/projects/03-cover.jpg" alt="проект 03"></div>
+              <div class="project-state hover"><img src="./assets/projects/03-cover-hover.jpg" alt="проект 03"></div>
+            </div>
+            <div class="project-meta-row">
+              <p class="project-title">БиблиоСпейс</p>
+              <span class="project-arrow" aria-hidden="true">→</span>
+            </div>
+            <p class="project-sub">вебхук · 2026</p>
+          </a>
+        </div>
+
+        <div class="reveal case case-4" data-reveal data-delay="210">
+          <a class="project-card" href="./projects/project-4.html" data-cursor="view">
+            <div class="project-media">
+              <div class="project-state default"><img src="./assets/projects/04-cover.jpg" alt="проект 04"></div>
+              <div class="project-state hover"><img src="./assets/projects/04-cover-hover.jpg" alt="проект 04"></div>
+            </div>
+            <div class="project-meta-row">
+              <p class="project-title">FruitEco</p>
+              <span class="project-arrow" aria-hidden="true">→</span>
+            </div>
+            <p class="project-sub">лендинг · 2026</p>
+          </a>
+        </div>
+
+      </div><!-- /cases-row -->
+
+        <div class="cases-row cases-row--3">
+
+        <div class="reveal case case-5" data-reveal data-delay="280">
+          <a class="project-card" href="./projects/project-5.html" data-cursor="view">
+            <div class="project-media">
+              <div class="project-state default"><img src="./assets/projects/05-cover.jpg" alt="проект 05"></div>
+              <div class="project-state hover"><img src="./assets/projects/05-cover-hover.jpg" alt="проект 05"></div>
+            </div>
+            <div class="project-meta-row">
+              <p class="project-title">Altai Terra</p>
+              <span class="project-arrow" aria-hidden="true">→</span>
+            </div>
+            <p class="project-sub">лендинг · 2026</p>
+          </a>
+        </div>
+
+        <div class="reveal case case-6" data-reveal data-delay="280">
+          <a class="project-card" href="./projects/project-6.html" data-cursor="view">
+            <div class="project-media">
+              <div class="project-state default"><img src="./assets/projects/06-cover.jpg" alt="проект 06"></div>
+              <div class="project-state hover"><img src="./assets/projects/06-cover-hover.jpg" alt="проект 06"></div>
+            </div>
+            <div class="project-meta-row">
+              <p class="project-title">Чижик</p>
+              <span class="project-arrow" aria-hidden="true">→</span>
+            </div>
+            <p class="project-sub">лендинг · 2026</p>
+          </a>
+        </div>
+
+      </div><!-- /cases-row -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer" id="contacts">
+    <div class="footer-top">
+      <div class="footer-top-inner">
+        <div class="reveal" data-reveal>
+          <h2 class="footer-heading">готова обсудить ваш проект :)</h2>
+        </div>
+      </div>
+      <div class="footer-deco" aria-hidden="true">
+        <img src="./assets/footer-connection.png" alt="" class="footer-deco-img">
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div class="reveal footer-col" data-reveal>
+          <h3 class="footer-col-title">контакты для связи</h3>
+          <a href="mailto:danazaitsevaa@gmail.com" class="footer-link">
+            <span class="footer-link-tag">(email)</span>danazaitsevaa@gmail.com
+          </a>
+          <a href="https://t.me/wrluu" class="footer-link" target="_blank" rel="noopener">
+            <span class="footer-link-tag">(tg)</span>wrluu
+          </a>
+        </div>
+
+        <div class="reveal footer-col" data-reveal data-delay="70">
+          <h3 class="footer-col-title">социальные сети</h3>
+          <a href="https://www.behance.net/danazaitsevaa" class="footer-link" target="_blank" rel="noopener">
+            <span class="footer-link-tag">(behance)</span>danazaitsevaa
+          </a>
+          <a href="https://dprofile.ru/danazaitsevaa" class="footer-link" target="_blank" rel="noopener">
+            <span class="footer-link-tag">(dprofile)</span>danazaitsevaa
+          </a>
+        </div>
+
+        <div class="reveal footer-col footer-col--plain" data-reveal data-delay="140">
+          <a href="https://t.me/danazaitsevaa" class="footer-link" target="_blank" rel="noopener">
+            <span class="footer-link-tag">(tg канал)</span>danazaitsevaa
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="./js/tilt.js"></script>
+<script src="./js/cursor.js"></script>
+<script src="./js/reveal.js"></script>
+<script>
+  // Листок — крупная амплитуда с лёгким "приподниманием" к курсору
+  createOrganicTilt(document.getElementById('noteTilt'), {
+    rx: 6, ry: 7, tx: 8, ty: 6, liftPx: 4, scale: 0.015
+  });
+
+  // Штрихкод у About — "должен оставаться на своём месте":
+  // без translate, только лёгкий наклон и едва заметный масштаб.
+  createOrganicTilt(document.getElementById('barcodeTilt'), {
+    rx: 5, ry: 6, tx: 0, ty: 0, scale: 0.03
+  });
+</script>
+</body>
+</html>
